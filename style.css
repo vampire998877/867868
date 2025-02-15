@@ -6,25 +6,30 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: #f9f9f9;
+  background: #f8f9fa;
   text-align: center;
 }
 
 /* Container */
 .container {
   background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
   width: 90%;
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Überschrift */
 h1 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
-  color: #333;
+  color: #222;
+  margin-bottom: 10px;
 }
 
 /* Erklärungstext */
@@ -39,12 +44,13 @@ p {
   background: #007bff;
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 14px 24px;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
+  outline: none;
 }
 
 #randomize-btn:hover {
@@ -60,7 +66,9 @@ p {
   margin-top: 20px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  min-height: 50px;
+  min-height: 60px;
+  max-width: 80%;
+  line-height: 1.5;
 }
 
 .hidden {
